@@ -4,7 +4,10 @@ plugins {
 }
 
 dependencies {
-    api(projects.surfMicroserviceTestCore)
+    api(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreCommon)
+    runtimeOnly(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreRuntime)
+//    compileOnlyApi("core-api")
+//    runtimeOnly("core-runtime")
 }
 
 surfStandaloneApi {

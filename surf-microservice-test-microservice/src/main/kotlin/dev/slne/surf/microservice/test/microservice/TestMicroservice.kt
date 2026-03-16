@@ -10,6 +10,6 @@ class TestMicroservice : Microservice() {
     }
 
     override suspend fun onDisable() {
-        
+
     }
 }

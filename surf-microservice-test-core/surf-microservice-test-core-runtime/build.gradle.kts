@@ -3,10 +3,10 @@ plugins {
     id("dev.slne.surf.microservice.gradle.plugin.core")
 }
 
-dependencies {
-    api(projects.surfMicroserviceTestApi)
-}
-
 surfMicroserviceCore {
     withCommon()
+}
+
+dependencies {
+    api(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreCommon)
 }
