@@ -18,6 +18,5 @@ surfMicroserviceRuntime {
 }
 
 dependencies {
-    api(projects.surfMicroserviceTestApi)
-    runtimeOnly(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreRuntime)
+    api(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreClient)
 }
