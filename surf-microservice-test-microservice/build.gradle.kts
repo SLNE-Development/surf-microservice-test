@@ -1,3 +1,5 @@
+import dev.slne.surf.microservice.gradle.plugin.utils.RabbitModule
+
 plugins {
     id("dev.slne.surf.surfapi.gradle.standalone")
     id("dev.slne.surf.microservice.gradle.plugin.runtime")
@@ -5,9 +7,6 @@ plugins {
 
 dependencies {
     api(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreCommon)
-    runtimeOnly(projects.surfMicroserviceTestCore.surfMicroserviceTestCoreRuntime)
-//    compileOnlyApi("core-api")
-//    runtimeOnly("core-runtime")
 }
 
 surfStandaloneApi {
@@ -16,4 +15,6 @@ surfStandaloneApi {
 
 surfMicroserviceRuntime {
     withRuntimeMicroservice()
+
+    withRabbitModule(RabbitModule.SERVER_API, true)
 }

@@ -1,3 +1,5 @@
+import dev.slne.surf.microservice.gradle.plugin.utils.RabbitModule
+
 plugins {
     id("dev.slne.surf.surfapi.gradle.core")
     id("dev.slne.surf.microservice.gradle.plugin.core")
@@ -5,6 +7,8 @@ plugins {
 
 surfMicroserviceCore {
     withCommon()
+
+    withRabbitModule(RabbitModule.CLIENT_API)
 }
 
 dependencies {
