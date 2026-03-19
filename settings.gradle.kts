@@ -14,6 +14,6 @@ rootProject.name = "surf-microservice-test"
 
 include("surf-microservice-test-api")
 include("surf-microservice-test-core:surf-microservice-test-core-common")
-include("surf-microservice-test-core:surf-microservice-test-core-runtime")
+include("surf-microservice-test-core:surf-microservice-test-core-client")
 include("surf-microservice-test-microservice")
 include("surf-microservice-test-paper")

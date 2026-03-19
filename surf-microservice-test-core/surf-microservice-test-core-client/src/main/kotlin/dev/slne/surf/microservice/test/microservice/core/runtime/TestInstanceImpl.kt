@@ -1,7 +1,7 @@
 package dev.slne.surf.microservice.test.microservice.core.runtime
 
 import com.google.auto.service.AutoService
-import dev.slne.surf.microservice.test.microservice.api.TestInstance
+import dev.slne.surf.microservice.test.microservice.core.common.TestInstance
 import dev.slne.surf.rabbitmq.api.ClientRabbitMQApi
 
 @AutoService(TestInstance::class)

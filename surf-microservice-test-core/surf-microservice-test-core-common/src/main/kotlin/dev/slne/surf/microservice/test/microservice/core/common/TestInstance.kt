@@ -1,4 +1,4 @@
-package dev.slne.surf.microservice.test.microservice.api
+package dev.slne.surf.microservice.test.microservice.core.common
 
 import dev.slne.surf.surfapi.core.api.util.requiredService
 
