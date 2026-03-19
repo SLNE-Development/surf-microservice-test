@@ -6,9 +6,9 @@ import dev.jorel.commandapi.kotlindsl.anyExecutor
 import dev.jorel.commandapi.kotlindsl.commandAPICommand
 import dev.jorel.commandapi.kotlindsl.getValue
 import dev.jorel.commandapi.kotlindsl.greedyStringArgument
-import dev.slne.surf.microservice.test.microservice.core.common.TestInstance
 import dev.slne.surf.microservice.test.microservice.api.TestMessage
 import dev.slne.surf.microservice.test.microservice.api.TestMessageService
+import dev.slne.surf.microservice.test.microservice.core.common.TestInstance
 import dev.slne.surf.surfapi.core.api.messages.adventure.sendText
 
 class PaperMain : SuspendingJavaPlugin() {
