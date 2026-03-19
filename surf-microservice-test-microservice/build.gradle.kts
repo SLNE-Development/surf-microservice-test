@@ -1,8 +1,8 @@
-import dev.slne.surf.microservice.gradle.plugin.utils.RabbitModule
+import dev.slne.surf.microservice.gradle.plugin.rabbit.RabbitModule
 
 plugins {
     id("dev.slne.surf.surfapi.gradle.standalone")
-    id("dev.slne.surf.microservice.gradle.plugin.runtime")
+    id("dev.slne.surf.microservice")
 }
 
 dependencies {
@@ -13,8 +13,7 @@ surfStandaloneApi {
     withSurfDatabaseR2dbc("1.3.0", "dev.slne.surf.microservice.test.microservice.libs")
 }
 
-surfMicroserviceRuntime {
-    withRuntimeMicroservice()
-
+surfMicroservice {
+    withMicroserviceApi()
     withRabbitModule(RabbitModule.SERVER_API, true)
 }
